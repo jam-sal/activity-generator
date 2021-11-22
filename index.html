@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+  Jamilah Saleh
+  Section: AI, Jack and Gary
+  Date: 5-5-2021
+
+  This is the page for the activity generator. It allows the user to input a type of
+  activity and a number of participants. They're also able to type in a number for
+  how accessible they want the activity to be if they choose to.
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Find an Activity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Crafty+Girls&family=Work+Sans&family=Zilla+Slab&family=Kalam&display=swap"
+    rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Got Nothing to Do? No Ideas?</h1>
+      <h2>Generate a random activity!</h2>
+    </header>
+    <label for="type-select">Type of Activity:</label>
+    <select name="type" id="type-select">
+      <option value="">Random</option>
+      <option value="education">Education</option>
+      <option value="recreational">Recreational</option>
+      <option value="social">Social</option>
+      <option value="diy">DIY</option>
+      <option value="charity">Charity</option>
+      <option value="cooking">Cooking</option>
+      <option value="relaxation">Relaxation</option>
+      <option value="music">Music</option>
+      <option value="busywork">Busywork</option>
+    </select>
+    <label for="part-select">Number of People:</label>
+    <select name="participants" id="part-select">
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three-plus">3+</option>
+    </select>
+    <label>Accessibility (Optional, no activity will be generated for some numbers):
+      <input id="access" placeholder="0.00-1.00">
+    </label>
+    <button id="gen">Generate</button>
+    <div id="activity">
+      <p>You should...</p>
+    </div>
+    <footer>
+      Data from the <a href="https://www.boredapi.com/">Bored API</a>
+    </footer>
+  </body>
+</html>
